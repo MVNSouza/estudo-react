@@ -24,10 +24,10 @@ Estrutura do Projeto:
 Como rodar o projeto localmente:
 
 1. Clone o repositório:
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/MVNSouza/estudo-react.git
 
 2. Acesse o diretório da aplicação:
-cd seu-repo/app-teste
+cd estudo-react/app-teste
 
 3. Instale as dependências:
 ```npm install```
