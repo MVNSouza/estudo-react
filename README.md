@@ -4,6 +4,7 @@ Este repositório contém uma aplicação Next.js localizada na pasta "app-teste
 
 Estrutura do Projeto:
 
+```
 📦 app-teste
  ┗ 📂 src
     ┣ 📂 app
@@ -18,6 +19,7 @@ Estrutura do Projeto:
     ┣ 📜 package-lock.json
     ┣ 📜 package.json
     ┗ 📜 README.md
+```
 
 Como rodar o projeto localmente:
 
