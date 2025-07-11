@@ -30,14 +30,14 @@ git clone https://github.com/seu-usuario/seu-repo.git
 cd seu-repo/app-teste
 
 3. Instale as dependências:
-npm install
+```npm install```
 # ou
-yarn install
+```yarn install```
 
 4. Inicie o servidor de desenvolvimento:
-npm run dev
+```npm run dev```
 # ou
-yarn dev
+```yarn dev```
 
 A aplicação estará disponível em http://localhost:3000
 
@@ -46,9 +46,9 @@ Pré-requisitos:
 - npm ou yarn instalado
 
 Scripts disponíveis:
-- npm run dev – Inicia o servidor de desenvolvimento
-- npm run build – Compila a aplicação para produção
-- npm start – Roda a versão de produção
+- ```npm run dev``` – Inicia o servidor de desenvolvimento
+- ```npm run build``` – Compila a aplicação para produção
+- ```npm start``` – Roda a versão de produção
 
 Licença:
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
