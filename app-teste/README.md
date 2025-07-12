@@ -14,43 +14,47 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Explicao do page.js
-use cliente;
-    - Diz ao next.js usar este arquivo como o padrão para o cliente-side.
 
--import styles from "./page.module.css";
--import React, { useState } from "react";
-    styles importa o modulo CSS: o page.module.css.
-    useState vem do React, pra criar estado local.
+## Explicação do `page.js`
 
-O componente do Button 
-    - Chame-se a função Button() com uma variavel constante 'count' com estado inicial em 0 para guardar quantas vezes o botão foi clicado.
-    - A função handleClick() serve para atualizar o valor a cada vez que foi clicado.
-    - No (<Button>) o ClassName aplica o estilo do CSS.
-    onClick é um prop que dispara a funcao handleClick.
-    - O (<p>) exibe quantas o botão foi clicado.
+### `use client`
+Diz ao Next.js usar este arquivo como Client Component, ou seja, ele será renderizado no navegador.
 
-```
-O componente do Input
-    - Chama-se a função Input() com uma variavel constante 'value' com estado de string vazia que guarda o texto digitado.
-    - A função handleChange() é chamada toda vez que o usuário digita algo no (<input>).
-        O event do handleChange() é o objeto de evento do onChange.
-        event.target.value é o texto dentro do (<input>).
-        setValue(...) atualiza o estado com o novo texto.
-    - No (<input>) o ClassName aplica o estilo do modulo CSS.
-    type= "text" -> diz que o input é de texto.
-    value= {value} -> o valor exibido no input vem do estado.
-    Toda vez que é digitado no onChange chama-se handleChange().
-    - O (<p>) exibe o que o usuario digitou.
-```
-Home 
-    'export default function Home' esta exportanto a função Home que diz ao next que esta é pagina principal.
-    Estrutura:
-        - (<div className={styles.page}>): Div principal que usa uma classe CSS do módulo de estilos.
-        - (<main className={styles.main}>): Tag main semântica para o conteúdo principal.
-    Conteudo:
-        - (<h1>): Título principal "Estudo para React"
-        - (<p>): Descrição "Botão e Input com React"
-    Componentes:
-        - (<ol className={styles.grid}>): Lista ordenada que serve como container para os cards. Dentro dela há dois (<ul>).
-        o primeiro renderiza o componente (<Button />) e o segundo renderiza o componente (<Input />).
+### Imports
+- `styles` importa o módulo CSS: `page.module.css`.
+- `useState` vem do React e é usado para criar estado local.
+
+### Componente **Button**
+Chama-se a função `Button()` com uma variável constante `count` iniciada em 0, que guarda quantas vezes o botão foi clicado.
+A função `handleClick()` atualiza o valor de `count` a cada clique.
+No `<button>`, o `className` aplica o estilo do CSS Module.
+`onClick` é a prop que dispara a função `handleClick`.
+O `<p>` exibe quantas vezes o botão foi clicado.
+
+### Componente **Input**
+Chama-se a função `Input()` com uma variável constante `value` iniciada como string vazia, que guarda o texto digitado.
+A função `handleChange()` é chamada toda vez que o usuário digita algo no `<input>`.
+O `event` do `handleChange()` é o objeto de evento do `onChange`.
+`event.target.value` é o texto dentro do `<input>`.
+`setValue(...)` atualiza o estado com o novo texto.
+No `<input>`, o `className` aplica o estilo do módulo CSS.
+`type="text"` define que o input é de texto.
+`value={value}` indica que o valor exibido no input vem do estado.
+Sempre que é digitado, o `onChange` chama `handleChange()`.
+O `<p>` exibe o que o usuário digitou.
+
+### Home
+`export default function Home` exporta a função `Home` e informa ao Next.js que esta é a página principal.
+
+**Estrutura:**
+- `div className={styles.page}`: div principal com classe CSS do módulo de estilos.
+- `main className={styles.main}`: tag `main` semântica para o conteúdo principal.
+
+**Conteúdo:**
+- `<h1>`: título principal *"Estudo para React"*.
+- `<p>`: descrição *"Botão e Input com React"*.
+
+**Componentes:**
+- `ol className={styles.grid}`: lista ordenada que serve como container para os cards.
+  O primeiro `ul` renderiza o componente `Button`.
+  O segundo `ul` renderiza o componente `Input`.
