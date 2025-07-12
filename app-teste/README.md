@@ -25,23 +25,21 @@ Diz ao Next.js usar este arquivo como Client Component, ou seja, ele será rende
 - `useState` vem do React e é usado para criar estado local.
 
 ### Componente **Button**
-Chama-se a função `Button()` com uma variável constante `count` iniciada em 0, que guarda quantas vezes o botão foi clicado.
-A função `handleClick()` atualiza o valor de `count` a cada clique.
-No `<button>`, o `className` aplica o estilo do CSS Module.
-`onClick` é a prop que dispara a função `handleClick`.
-O `<p>` exibe quantas vezes o botão foi clicado.
-
+- Utiliza `useState` para criar a variável `count` (inicialmente 0), que armazena quantas vezes o botão foi clicado.
+- A função `handleClick` incrementa o valor de `count` quando o botão é clicado.
+- O botão possui:
+  - className para estilização via CSS Modules.
+  - onClick que dispara handleClick.
+- Um parágrafo (<p>) exibe o número de cliques.
 ### Componente **Input**
-Chama-se a função `Input()` com uma variável constante `value` iniciada como string vazia, que guarda o texto digitado.
-A função `handleChange()` é chamada toda vez que o usuário digita algo no `<input>`.
-O `event` do `handleChange()` é o objeto de evento do `onChange`.
-`event.target.value` é o texto dentro do `<input>`.
-`setValue(...)` atualiza o estado com o novo texto.
-No `<input>`, o `className` aplica o estilo do módulo CSS.
-`type="text"` define que o input é de texto.
-`value={value}` indica que o valor exibido no input vem do estado.
-Sempre que é digitado, o `onChange` chama `handleChange()`.
-O `<p>` exibe o que o usuário digitou.
+- Utiliza `useState` para criar a variável count (inicialmente 0), que armazena quantas vezes o botão foi clicado.
+- A função `handleChange` é chamada toda vez que o usuário digita algo no `<input>` e captura o valor digitado (`event.target.value`) e atualiza o estado.
+- No `<input>`:  
+  - O `className` aplica o estilo do módulo CSS.
+  -  `type="text"` define que o input é de texto.
+  -`value={value}` indica que o valor exibido no input vem do estado.
+  - Sempre que é digitado, o `onChange` chama `handleChange`.
+- O `<p>` exibe o que o usuário digitou.
 
 ### Home
 `export default function Home` exporta a função `Home` e informa ao Next.js que esta é a página principal.
