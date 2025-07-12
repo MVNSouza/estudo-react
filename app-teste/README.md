@@ -30,6 +30,7 @@ O componente do Button
     onClick é um prop que dispara a funcao handleClick.
     - O (<p>) exibe quantas o botão foi clicado.
 
+```
 O componente do Input
     - Chama-se a função Input() com uma variavel constante 'value' com estado de string vazia que guarda o texto digitado.
     - A função handleChange() é chamada toda vez que o usuário digita algo no (<input>).
@@ -41,6 +42,7 @@ O componente do Input
     value= {value} -> o valor exibido no input vem do estado.
     Toda vez que é digitado no onChange chama-se handleChange().
     - O (<p>) exibe o que o usuario digitou.
+```
 Home 
     'export default function Home' esta exportanto a função Home que diz ao next que esta é pagina principal.
     Estrutura:
